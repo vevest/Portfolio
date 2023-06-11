@@ -1,0 +1,839 @@
+/* General */
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: url(../font/SourceSansPro-Light.ttf);
+}
+@font-face {
+  font-family: "Raleway";
+  src: url(../font/Raleway-VariableFont_wght.ttf);
+}
+
+video{
+  display: none ;
+}
+
+.web-container{
+    display: none;
+}
+
+body{
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+footer {
+    background-color: #9a97975d;
+    gap: 10%;
+}
+
+
+.icon{
+    width: 35%;
+   margin-bottom: 40px;
+   margin-top: 20px;
+}
+
+.pulse{
+    position: relative;
+    left: 40%;
+    margin-top: 60px;
+    width: 13%;
+}
+
+#one .pulse{
+  position: relative;
+  left: 40%;
+  margin-top: 10px;
+  width: 13%;
+}
+
+p{
+    font-family: 'Source Sans Pro';
+    font-size: 18px;
+    font-weight: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    color: #2e2d2b;
+}
+
+h2{
+    font-family: 'Source Sans Pro';
+    font-size: 30px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-weight: 900;
+    color: #2e2d2b;
+}
+
+
+
+/* ------------------------------------making sticky header----------------------------------*/
+
+
+.header{
+    background-color: transparent;
+    padding-left: 10px 16px;
+ 
+}
+
+.content{
+    padding: 16px;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 102px;
+}
+
+
+
+
+/*--------------------------------burgermenu------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  
+  a {
+    font-family: "SourceSansPro";
+  }
+  
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    border-bottom:2px solid var(--tertiary-color);
+
+    }
+  
+  .hamburger {
+    position: relative;
+    display: block;
+    width: 35px;
+    margin: 16px 16px 20px 0;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    z-index: 3;
+  }
+  
+  .hamburger .bar,
+  .hamburger:after,
+  .hamburger:before {
+    /* after og before er psheudo elementer der kan lave flere elementer til den det givet element*/
+    content: ""; /* content er none*/
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color:var(--secondary-color);
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .hamburger.is-active:before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+  }
+  
+  .hamburger.is-active .bar {
+    opacity: 0;
+  }
+  
+  .hamburger.is-active:after {
+    transform: rotate(45deg) translate(-9px, -8px);
+  }
+  
+  .mobil-nav {
+    margin-top: 105px;
+    display: block;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    z-index: 2;
+    background-color: #f5f5f5df;
+    padding-top: 140px;
+    transition: 0.4s;
+  }
+  
+  .mobil-nav.is-active {
+    left: 0;
+  }
+  
+  .mobil-nav a {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 40px;
+    text-align: center;
+    padding: 16px;
+    background-color: rgba(212, 210, 210, 0.748);
+    color:var(--secondary-color);
+    border-radius: 6px;
+    box-shadow: 6px 6px 1px 1px var(--tertiary-color);
+  }
+  
+  .nav_link {
+    font-size: 18px;
+    font-weight: 400;
+    background: rgba(212, 210, 210, 0.254);
+    box-shadow: 6px 6px 1px 1px var(--tertiary-color);
+    padding: 10px;
+    margin: 0 5px;
+    color: var(--secondary-color);
+    text-decoration: none;
+    border-radius: 6px;
+    display: none;
+    transition: 0.2s;
+  }
+  
+  .nav_link:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+  }
+  
+  li {
+    list-style: none;
+    display: flex;
+    padding: 0 16px;
+  }
+  
+  
+  #logo {
+    margin: 12px 0 20px 10px;
+    width: 6vh;
+    height: 6vh;
+    transition: 0.2s;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .nav-text {
+    text-align: center;
+    flex-grow: 1;
+    margin-top: 16px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--secondary-color);
+    margin-top: 20px;
+  }
+  
+
+.nav-text h2{
+    margin-top: 7px;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #2e2d2b;
+}
+
+.nav-text h1{
+  font-size: 40px;
+  font-weight: 900;
+  font-family: 'Raleway';
+  color: #2e2d2b;
+}
+
+/*------------------------snap-------------------------*/
+
+.box{
+    flex: none;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    scroll-snap-align: start;
+    margin-top: 0;
+}
+
+#one{
+    background-image: linear-gradient(#f5f5f5, #ffb574);
+}
+
+#two{
+    background-image: linear-gradient(#f5f5f5, #bebab4 );
+}
+
+#three{
+    background-image: linear-gradient(#f5f5f5, #a8ecb5) ;
+}
+
+#four{
+    background-image: linear-gradient(#f5f5f5, #abe2ff);
+}
+
+#five{
+    background-image: linear-gradient(#f5f5f5,#ffb574, #ffb574);
+}
+
+.container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 85vh;
+}
+
+.textbox{
+  text-align: center;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#skriv_container{
+    position: relative;
+    top: -13%;
+    z-index: 1;
+    width: 220px;
+    border-width: 3px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size: 25px;
+    border-radius: 12px ;
+    background-color: #f5f5f5;
+    border-color: #ff8d29;
+}
+
+#skriv_container a{
+    color: #ec7105;
+}
+
+#komigang_container{
+  position: relative;
+  top: 5px;
+  z-index: 1;
+  width: 200px;
+  border-width: 3px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-size: 25px;
+  border-radius: 12px ;
+  background-color: #f5f5f5;
+  border-color: #ff8d29;
+}
+
+#komigang_container a{
+  color: #ec7105;
+}
+
+
+#disc_container{
+    position: relative;
+    top: 5%;
+    z-index: 1;
+    width: 200px;
+    border-width: 3px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size: 25px;
+    border-radius: 12px ;
+    background-color: #f5f5f5;
+    border-color: #8b8783;
+   
+}
+
+#disc_container a{
+    color: #54514d;
+}
+
+#banen_container{
+    position: relative;
+    top: 5%;
+    z-index: 1;
+    width: 200px;
+    border-width: 3px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size: 25px;
+    border-radius: 12px ;
+    background-color: #f5f5f5;
+    border-color: #3dcf5a;
+}
+
+#banen_container a{
+    color: #0ea52b;
+}
+
+#kfk_container{
+    position: relative;
+    top: 5%;
+    z-index: 1;
+    width: 200px;
+    border-width: 3px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size: 25px;
+    border-radius: 12px ;
+    background-color: #f5f5f5;
+    border-color: #5aacd6;
+}
+
+#kfk_container a{
+    color: #397ea1;
+}
+
+#vises{
+    position: relative;
+    width: 100%;
+    top: 5%;
+}
+
+#five h2{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+
+
+/*animationer*/
+
+.pulse {
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+  }
+  @keyframes pulse {
+    0% {
+      transform: scale(100%);
+    }
+    50% {
+      transform: scale(115%);
+    }
+    100% {
+      transform: scale(100%);
+    }
+  }
+
+  
+
+
+/* -----------------------------------------------Webdesign-------------------------------------------------*/
+
+@media(min-width:800px){
+
+    main {
+        margin: auto;
+        max-width: 1200px;
+      }
+
+   
+      .mobil-nav {
+        display: none;
+      }
+    
+      .hamburger {
+        display: none;
+      }
+
+      video{
+        display: block;
+        width: 100%;
+      }
+    
+      #logo {
+        margin: 12px 0 0 10px;
+        height: 11vh;
+        width: 10vh;
+      }
+    
+      .nav_link {
+        display: inline-block;
+      }
+    
+     h1, h2 {
+        padding-left: 20%;
+      }
+
+      nav {
+        position: relative;
+        margin: auto;
+        padding-right: 60px;
+      }
+
+      .container{
+        display: none ;
+      }
+    
+    .web-container{
+        display: block;
+    }
+    
+    /* ----------------------Style the tab----------------------- */
+    .tab {
+        display: flex;
+        justify-content:space-around ;
+        overflow: hidden;
+        border: none;
+        border-bottom: none;
+        background-color: #f5f5f5;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-top: 70px;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+    }
+
+
+  
+  /* Style the buttons that are used to open the tab content */
+
+
+    .tab #tab1{
+        background-color: #ffb574;
+        color: white;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 10px 7%;
+        transition: 0.3s;
+        border-top-right-radius: 12px;
+        border-top-left-radius: 12px;
+    }
+
+    .tab #tab2{
+        background-color: #bebab4;
+        color: white;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 10px 7%;
+        transition: 0.3s;
+        border-top-right-radius: 12px;
+        border-top-left-radius: 12px;
+    }
+
+    .tab #tab3{
+        background-color: #72dc87;
+        color: white;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 10px 7%;
+        transition: 0.3s;
+        border-top-right-radius: 12px;
+        border-top-left-radius: 12px;
+    }
+
+    .tab #tab4{
+        background-color: #abe2ff;
+        color: white;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 10px 8%;
+        transition: 0.3s;
+        border-top-right-radius: 12px;
+        border-top-left-radius: 12px;
+    }
+  
+  /* Change background color of buttons on hover for each */
+
+    .tab #tab1:hover {
+        background-color: #ff8d29;
+        border-top-right-radius: 12px;
+        border-top-left-radius: 12px;
+    }
+
+    .tab #tab2:hover {
+        background-color: #8b8783;
+        border-top-right-radius: 12px;
+        border-top-left-radius: 12px;
+    }
+
+    .tab #tab3:hover {
+        background-color: #4cd067;
+        border-top-right-radius: 12px;
+        border-top-left-radius: 12px;
+    }
+
+    .tab #tab4:hover {
+        background-color: #5aacd6;
+        border-top-right-radius: 12px;
+        border-top-left-radius: 12px;
+    }
+  
+  /* Create an active/current tablink class for each tab */
+    .tab #tab1.active {
+        background-color: #ff8d29;
+        border-top-right-radius: 12px;
+        border-top-left-radius: 12px;
+    }
+
+    .tab #tab2.active {
+        background-color: #8b8783;
+        border-top-right-radius: 12px;
+        border-top-left-radius: 12px;
+    }
+
+    .tab #tab3.active {
+        background-color: #4cd067;
+        border-top-right-radius: 12px;
+        border-top-left-radius: 12px;
+    }
+
+    .tab #tab4.active {
+        background-color: #5aacd6;
+        border-top-right-radius: 12px;
+        border-top-left-radius: 12px;
+    }
+
+    button{
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+    }
+  
+  /* Style the tab content */
+    #komigang {
+        display: none;
+        padding: 30px;
+        border: none;
+        background-color:#ff8d29 ;
+        color: white;
+    }
+
+
+    #discmobilen {
+        display: none;
+        padding: 30px;
+        border: none;
+        border-top: none;
+        background-color: #8b8783;
+        color: white;
+    }
+
+    #banen {
+        display: none;
+        padding: 30px;
+        border: none;
+        border-top: none;
+        background-color: #4cd067;
+        color: white;
+    }
+
+
+    #kfk {
+        display: none;
+        padding: 30px;
+        border: none;
+        border-top: none;
+        background-color: #5aacd6;
+        color: white;
+    }
+
+    .tabcontent{
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        border: none;
+        border-top: none;
+        position: relative;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 100px;
+    }
+
+    /*----------------Rykke rundt på content i tabs'ne-----------------------*/
+
+    .web-icon{
+        width: 25%;
+        position: relative;
+        left: 0%;
+        top: 0%;
+        padding: 26px;
+        padding-bottom: 110px;
+    }
+
+    #komigang .web-icon{
+       width: 22%;
+       padding:20px ;
+       padding-bottom: 75px;
+    }
+
+    .web-textbox{
+        position: absolute;
+        left: 35%;
+        top: 7%;
+        z-index: 3;
+        padding: 20px;
+    }
+
+    .web-textbox h2{
+        padding-left: 4%;
+        font-weight: 800;
+        font-size: 30px;
+        font-family: 'Source Sans Pro';
+    }
+
+    .web-textbox p{
+        font-weight: 400;
+        font-size: 20px;
+        font-family: 'Raleway', sans-serif;
+    }
+    
+
+    /* ----------- buttons in the tabs - color, size and position------------*/
+
+    #komigang_container{
+      width: 200px;
+      border-width: 3px;
+      padding-top: 18px;
+      padding-bottom: 18px;
+      font-size: 25px;
+      border-radius: 12px ;
+      margin-top: 25px;
+      margin-left: 15px;
+      background-color: #f5f5f5;
+      border-color: #ffb574;
+    }
+  
+    #komigang_container a{
+      color: #ff8d29;
+    }
+
+    #disc_container{
+        width: 200px;
+        border-width: 3px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        font-size: 25px;
+        border-radius: 12px ;
+        margin-top: 25px;
+        margin-left: 15px;
+        background-color: #f5f5f5;
+        border-color: #54514d;
+    }
+    
+    #disc_container a{
+        color: #54514d;
+    }
+    
+    #banen_container{
+        width: 200px;
+        border-width: 3px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        font-size: 25px;
+        border-radius: 12px ;
+        margin-top: 25px;
+        margin-left: 15px;
+        background-color: #f5f5f5;
+        border-color: #0ea52b;
+    }
+    
+    #banen_container a{
+        color: #0ea52b;
+    }
+    
+    #kfk_container{
+        width: 200px;
+        border-width: 3px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        font-size: 25px;
+        border-radius: 12px ;
+        margin-top: 25px;
+        margin-left: 15px;
+        background-color: #f5f5f5;
+        border-color: #397ea1;
+    }
+    
+    #kfk_container a{
+        color: #397ea1;
+    }
+
+
+    
+  
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,403 @@
+/*mobil site style*/
+
+body {
+  background-color:var(--primary-color);
+  /* background-image: url(/grafik/BG_test-01.svg);*/
+}
+
+footer {
+    background-color: #9a97975d;
+    gap: 10%;
+}
+
+img {
+    width: 90%;
+    padding: 5%;
+    margin: auto;
+    display: block;
+}
+
+h1 {
+    font-family: 'Raleway';
+    font-size: 40px;
+    font-weight: 900;
+    padding-left: 20%;
+    text-align: center;
+}
+
+p {
+  margin: 16px;
+  padding-top: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--secondary-color);
+  text-align: left;
+}
+
+h2,
+h3 {
+  font-size: 20px;
+  padding-left: 20%;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Raleway';
+}
+a:hover.mail {
+    background: none;
+    color: #ffffffdf;
+}
+
+/*id*/
+#andreas {
+    display: none;
+}
+
+#søren {
+    display: none;
+}
+
+#anton {
+    display: none;
+}
+
+#sinus {
+    display: none;
+}
+
+#morten {
+    display: none;
+}
+
+#niels {
+    display: none;
+}
+
+#mathias {
+    display: none;
+}
+
+/*classes*/
+.mail {
+    text-align: center;
+    grid-column: 2;
+    display: block;
+    border: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    background:none;
+    color: #2e2d2b;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.2s;
+    font-size: medium;
+}
+
+.box {
+    margin: 12% 10%;
+    background-color: var(--kontakt-color);
+    padding:2%;
+    box-shadow: 12px 12px 2px 1px #ffb574;
+    border-radius: 10px;
+}
+.kontaktlogo {
+    width: 50%;
+    display: inline-block;
+    margin: 0 25% 0 25%;
+}
+
+
+
+
+
+/*----------------------hamburgermenu----------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  
+  a {
+    font-family: 'Source Sans Pro';
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    border-bottom:2px solid var(--tertiary-color);
+  }
+  
+  .hamburger {
+    position: relative;
+    display: block;
+    width: 35px;
+    margin: 16px 16px 20px 0;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    z-index: 3;
+  }
+  
+  .hamburger .bar,
+  .hamburger:after,
+  .hamburger:before {
+    /* after og before er psheudo elementer der kan lave flere elementer til den det givet element*/
+    content: ""; /* content er none*/
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color:var(--secondary-color);
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .hamburger.is-active:before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+  }
+  
+  .hamburger.is-active .bar {
+    opacity: 0;
+  }
+  
+  .hamburger.is-active:after {
+    transform: rotate(45deg) translate(-9px, -8px);
+  }
+  
+  .mobil-nav {
+    margin-top: 105px;
+    display: block;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    z-index: 2;
+    background-color: #f5f5f5df;
+    padding-top: 140px;
+    transition: 0.4s;
+  }
+  
+  .mobil-nav.is-active {
+    left: 0;
+  }
+  
+  .mobil-nav a {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 40px;
+    text-align: center;
+    padding: 16px;
+    background-color: rgba(212, 210, 210, 0.748);
+    color:var(--secondary-color);
+    border-radius: 6px;
+    box-shadow: 6px 6px 1px 1px var(--tertiary-color);
+  }
+  
+  .nav_link {
+    font-size: 18px;
+    font-weight: 400;
+    background: rgba(212, 210, 210, 0.254);
+    box-shadow: 6px 6px 1px 1px var(--tertiary-color);
+    padding: 10px;
+    margin: 0 5px;
+    color: var(--secondary-color);
+    text-decoration: none;
+    border-radius: 6px;
+    display: none;
+    transition: 0.2s;
+  }
+  
+  .nav_link:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+  }
+  
+  li {
+    list-style: none;
+    display: flex;
+    padding: 0 16px;
+  }
+  
+  
+  #logo {
+    margin: 12px 0 20px 10px;
+    width: 6vh;
+    height: 6vh;
+    transition: 0.2s;
+    border: none;
+    cursor: pointer;
+    padding: 0%;
+  }
+  
+  .nav-text {
+    text-align: center;
+    flex-grow: 1;
+    margin-top: 16px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--secondary-color);
+    margin-top: 20px;
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+/*********************************/
+
+
+
+
+
+
+/*web format til layout som grid ect.*/
+@media(min-width:800px) {
+    main {
+        display: grid;
+        margin: auto;
+        max-width: 1200px;
+    }
+   
+
+
+    img#søren,
+    img#anton,
+    img#sinus,
+    img#andreas,
+    img#niels,
+    img#mathias,
+    img#morten {
+        display: block;
+        width: 50%;
+        padding: 5%;
+        margin: auto;
+    }
+
+    
+    /*id*/
+    #overskrift {
+      margin: -12% 0 0 2%;
+      text-align: left;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+      font-size: 54px;
+      color:#2e2d2b;
+    }
+    
+    /*Class*/
+    h2.titel{
+      font-size: 35px;
+      font-weight: 800;
+      padding-left: 0%;
+      text-align: center;
+    }
+    h3.titel{
+      font-size: 25px;
+      font-weight: 400;
+      padding-left: 0%;
+      text-align: center;
+    }
+    p.text{
+      font-size: 20px;
+      font-weight: 400;
+      font-family: 'Source Sans Pro';
+    }
+    .div_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .sørengrid {
+        grid-column: span 1;
+        grid-row: span 4
+    }
+
+    .antongrid {
+        grid-column: span 1;
+        grid-row: span 4
+    }
+
+    .sinusgrid {
+        grid-column: span 1;
+        grid-row: span 4
+    }
+
+    .andreasgrid {
+        grid-column: span 1;
+        grid-row: span 4
+    }
+
+    .mortengrid {
+        grid-column: span 1;
+        grid-row: span 4
+    }
+
+    .nielsgrid {
+        grid-column: span 1;
+        grid-row: span 4
+    }
+
+    .mathiasgrid {
+        grid-column: span 1;
+        grid-row: span 4
+    }
+
+    .box {
+      margin: 1% 5% 10%;
+      background-color: var( --kontakt-color);
+    }
+
+    .kontaktlogo {
+        width: 20%;
+        display: inline-block;
+        margin:0% 0 0 0%;
+    }
+
+    /*til header*/
+    .mobil-nav {
+        display: none;
+      }
+    
+      .hamburger {
+        display: none;
+      }
+    
+      #logo {
+        margin: 12px 0 0 10px;
+        height: 11vh;
+        width: 10vh;
+      }
+    
+      .nav_link {
+        display: inline-block;
+      }
+    
+      h1 {
+        padding-left: 20%;
+      }
+
+      nav {
+        position: relative;
+        margin: auto;
+        padding-right: 60px;
+      }
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-display: swap;
+    src: url(../font/SourceSansPro-Light.ttf)
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-display: swap;
+    src: url(../font/Raleway-VariableFont_wght.ttf);
+}
+
+
+
+

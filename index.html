@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forside</title>
+    <link rel="stylesheet" href="css/style_forside.css">
+    <link rel="stylesheet" href="css/style_costum.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container" id="myHeader"> 
+            <img id="logo" src="grafik/kfk_lolo-01.svg" alt="logo">
+       
+ 
+             <div class="nav-text"><h1>DISC GOLF</h1><h2>VALBYPARKEN</h2></div> 
+ 
+             <nav>
+                 <a class="nav_link" href="index.html">FORSIDE</a>
+                 <a class="nav_link" href="undersider/banen.html">BANEN</a>
+                 <a class="nav_link" href="undersider/kfk.html">KLUBBEN</a>
+                 <a class="nav_link" href="undersider/kontakt.html">KONTAKT</a>
+             </nav>
+             <div class="hamburger">
+                 <div class="bar"></div>
+             </div>
+         </div>
+    </header>
+
+
+    <nav class="mobil-nav"> 
+        <a href="index.html">FORSIDE</a>
+        <a href="undersider/banen.html">BANEN</a>
+        <a href="undersider/kfk.html">KLUBBEN</a>
+        <a href="undersider/kontakt.html">KONTAKT</a>
+    </nav>
+
+
+    <main>
+        <div class="container">
+                <div id="one" class="box">
+                    <img class="icon" src="grafik/komigang.svg" alt="Billede af disc golf mål og frisbee">
+                    <h2>KOM I GANG</h2>
+                    <div class="textbox">
+                        <p>Velkommen til Valbyparkens disc golf bane!</p>
+                        <p>Det er gratis at spille og du behøver ikke være medlem af klubben. Alle er velkomne.</p>
+                    </div>
+                    <button id="komigang_container"><a href="video/NyVPvideoCC.webm"  target="_blank">Se intro-video</a></button>
+                    <img class="pulse" src="grafik/arrow.svg" alt="Pil">
+                </div>
+
+                <div id="two" class="box">
+                    <img class="icon" src="grafik/discmobilv2.svg" alt="Billede af en bil, der sælger en disc">
+                    <h2>DISCMOBILEN</h2>
+                    <div class="textbox">
+                        <p>Kig forbi 'Discmobilen', der befinder sig i Valbyparken: tirsdage og torsdage kl. 14.00-18.00. </p>
+                        <p>Søren Ivø fra Disc Connection står klar til at hjælpe dig. </p>
+                    </div>
+                    <button id="disc_container"><a href="https://discconnection.dk/"> Køb discs her</a></button>
+                    <img class="pulse" src="grafik/arrow.svg" alt="Pil">
+                </div>
+
+                <div id="three" class="box">
+                    <img class="icon" src="grafik/bane.svg" alt="Billede af en disc golf bane">
+                    <h2>BANEN</h2>
+                    <div class="textbox">
+                        <p>Valbyparken er anlagt i 2004. Det er den mest spillede disc golf bane i verden!</p>
+                        <p>Se banekort, scorekort og statistik over banen her.</p>
+                    </div>
+                    <button id="banen_container"><a href="undersider/banen.html">BANEN</a></button>
+                    <img class="pulse" src="grafik/arrow.svg" alt="Pil">
+                </div>
+      
+                <div id="four" class="box">
+                    <img class="icon" src="grafik/kfk_lolo-01.svg">
+                    <h2>KLUBBEN</h2>
+                    <div class="textbox">
+                        <p>Meld dig ind i Københavns Frisbee Klub.</p>
+                        <p>Træning: Tirsdage kl. 16.30-18.30</p>
+                        <p>Turnering: Torsdage kl. 17.00</p>
+                    </div>
+                    <button id="kfk_container"><a href="undersider/kfk.html"> Meld dig ind</a></button>
+                    <img class="pulse" src="grafik/arrow.svg" alt="Pil"> 
+                </div>
+
+       
+                <div id="five" class="box">
+                    <img id="vises" src="grafik/vises.svg" alt="bogstaver">
+                    <button id="skriv_container"><a href="undersider/kontakt.html"> Skriv til os</a></button>
+                </div>
+                <a href="index.html">FORSIDE</a>
+        </div>
+        
+        <div class="web_container">
+
+          
+          <video id="video" controls autoplay loop>
+            <source src="video/banner1200x500AltEnding.webm" type="video/webm">
+          </video>
+
+            <!---------------------- Tab links -->
+            <div class="tab">
+              <button id="tab1" class="tablinks" onclick="openTab(event, 'komigang')">KOM I GANG</button>
+              <button id="tab2" class="tablinks" onclick="openTab(event, 'discmobilen')">DISCMOBILEN</button>
+              <button id="tab3" class="tablinks" onclick="openTab(event, 'banen')">BANEN</button>
+              <button id="tab4" class="tablinks" onclick="openTab(event, 'kfk')">KLUBBEN</button>
+            </div>
+            
+            <div id="komigang" class="tabcontent">
+              <img class="web-icon" src="grafik/komigang.svg" alt="Billede af disc golf mål og frisbee">
+              <div class="web-textbox">
+                <h2>KOM I GANG</h2>
+                <p>Velkommen til Valbyparkens disc golf bane!</p>
+                <p>Det er gratis, og du behøver ikke være medlem af klubben. </p>
+                <p>Alle er velkomne!</p>
+                <button id="komigang_container"><a href="video/NyVPvideoCC.webm">Se intro-video</a></button>
+              </div>
+            </div>
+          
+            <div id="discmobilen" class="tabcontent">
+              <img class="web-icon" src="grafik/discmobilv2.svg" alt="Billede af en bil, der sælger en disc">
+              <div class="web-textbox">
+                <h2>DISCMOBILEN</h2>
+                <p>Køb discs i 'Discmobilen', der holder i Valbyparken:</p>
+                  <p>Tirsdage og Torsdage kl. 14.00-18.00.</p>
+                <p>Søren Ivø fra Disc Connection står klar til at hjælpe dig.</p>
+                <button id="disc_container"><a href="https://discconnection.dk/"> Køb discs her</a></button>
+              </div>
+            </div>
+          
+            <div id="banen" class="tabcontent">
+              <img class="web-icon" src="grafik/bane.svg" alt="Billede af en disc golf bane">
+              <div class="web-textbox">
+                <h2>BANEN</h2>
+                <p>Valbyparken er anlagt i 2004.</p> 
+                <p>Det er den mest spillede disc golf bane i verden!</p>
+                <p>Se mere information, banekort og scorekort her.</p>
+                <button id="banen_container"><a href="undersider/banen.html">Læs mere</a></button>
+              </div>
+            </div>
+          
+            <div id="kfk" class="tabcontent">
+              <img class="web-icon" src="grafik/kfk_lolo-01.svg">
+              <div class="web-textbox">
+                <h2>KLUBBEN</h2>
+                <p>Meld dig ind i Københavns Frisbee Klub:</p>
+                <p>Træning: Tirsdage kl. 16.30-18.30.</p>
+                <p>Turnering: Torsdage kl. 17.00.</p>
+                <button id="kfk_container"><a href="undersider/kfk.html"> Læs mere</a></button>
+              </div>
+            </div>
+          
+        </div>       
+
+
+
+
+<script src="js/script_forside.js"></script>
+<script src="js/login.js"></script>
+
+    </main>
+    <footer>
+        <div>
+            <img src="fb-icon" alt="">
+            <img src="fb-icon" alt="">
+            <img src="fb-icon" alt="">
+        </div>
+        <p> ©2023 KEA 1ST SEMESTER STUDENTS IN COLLABORATION WITH KFK</p>
+
+
+    </footer>
+</body>
+</html>
