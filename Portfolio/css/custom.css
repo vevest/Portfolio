@@ -1,0 +1,19 @@
+html{
+    --primary-color: #FFFBF7; /*baggrund farve, hører til body*/
+    --secondary-color: #FBF4E8; /*font farve, gælder alle fonte*/
+    --tertiary-color: #666463; /*boxshadow farve til links*/
+
+    --light-color: #D6EBC3; /*baggrund farve til box*/
+
+    --dark-color: #89BF74; /*baggrund farve til box*/
+
+    --medium-color: #C1E2BE; /*baggrund farve til box*/
+
+}
+
+/* når i skal kalde en farve eksempel: 
+
+p{
+    color: var(----primary-color);
+}
+*/
