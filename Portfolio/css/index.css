@@ -1,0 +1,279 @@
+@font-face {
+    font-family: "EB_Garamound";
+    src: url(../fonts/EB_Garamond/EBGaramond-VariableFont_wght.ttf);
+  }
+  @font-face {
+    font-family: "Quicksand";
+    src: url(../fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
+  }
+
+header{
+    padding-bottom: 15px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+main{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.web-container{
+    display: none;
+}
+
+h1{
+    position: relative;
+    font-family: 'EB_Garamount';
+    font-weight: 700;
+    font-size: 43px;
+    letter-spacing: 10px;
+    color: var(--secondary-color);
+    top: 46px;
+    z-index: 2;
+    margin-top: 0;
+    margin-left: 8px;
+}
+
+h2{
+    position: relative;
+    top: 30px;
+    font-family: 'EB_Garamount';
+    font-weight: 400;
+    color: var(--secondary-color);
+    margin-bottom: 0;
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+
+#mig{
+    position: relative;
+    top: -74px;
+    z-index: 4;
+    font-family: 'EB_Garamount';
+    font-weight: 400;
+    font-size: 23px;
+    color: var(--primary-color);
+    margin-bottom: 0;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+
+.mob-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #C1E2BE;
+}
+
+.mob-container p{
+    margin-top: 0;
+    position: relative;
+    top: -27px;
+    letter-spacing: 3px;
+    margin-bottom: 7%;
+    font-size: 13px;
+    color: var(--tertiary-color);
+}
+
+.selfie{
+    position: relative;
+    top: -10px;
+    width: 70%;
+    z-index: 1;
+}
+
+.icon{
+    position: relative;
+    top: -34px;
+    width: 40%;
+    z-index: 2;
+}
+
+
+
+
+@media(min-width: 800px){
+    footer, header{
+        background-color: var(--secondary-color);
+    }
+
+    main{
+        background-color: var(--light-color);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .mob-container{
+        display: none;
+    }
+
+
+    .web-container{
+        display: block;
+    }
+
+
+    .grid_1-1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-bottom: 0;
+        height: 1000px;
+    }
+
+    .h2_1{
+        z-index: 1;
+        position: relative;
+        top: 18%;
+        left: 8%;
+        color: var(--secondary-color);
+        font-size: 30px;
+        padding-right: 60%;
+    }
+
+    .p1{
+        position: relative;
+        top: 17%;
+        left: 8.5%;
+        z-index: 2;
+        color: var(--secondary-color);
+        font-size: 18px;
+    }
+
+    .selfie1{
+        position: relative;
+        top: -7%;
+        width: 50%;
+        margin: 20%;
+        margin-top: 30%;
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .img1{
+        position: relative;
+        top: -80%;
+        left: 0;
+        width:100%;
+        z-index: 1;
+    }
+
+    .icon2{
+        position: relative;
+        top: 33%;
+        left: 9%;
+        width: 14%;
+        z-index: 1;
+    }
+
+    .h2_2{
+        position: relative;
+        top: -400%;
+        left: 100%;
+        z-index: 1;
+        color: var(--tertiary-color);
+        font-size: 40px;
+    }
+
+    .p2{
+        position: relative;
+        top: -300%;
+        left: 0%;
+        z-index: 2;
+        color: var(--tertiary-color);
+        font-size: 18px;
+    }
+
+
+    .icon3{
+        position: relative;
+        top: -570%;
+        left: 150%;
+        width: 35%;
+        z-index: 1;
+        margin-bottom: 0;
+    }
+
+    #t2{
+        position: relative;
+        top: 29%;
+        left: -1%;
+        position: relative;
+        z-index: 4;
+        font-family: 'EB_Garamount';
+        font-weight: 400;
+        font-size: 23px;
+        color: var(--primary-color);
+    }
+    #t2:link { text-decoration: none; }
+    
+    
+    #t2:visited { text-decoration: none; }
+    
+    
+    #t2:hover { 
+        text-decoration: none; 
+        transition: 0.2s;
+        color: var(--tertiary-color);
+    }
+    
+    #t2:active { 
+        text-decoration: none;
+     }
+
+    #mig1{
+        position: relative;
+        top: -550%;
+        left: 60%;
+        z-index: 4;
+        font-family: 'EB_Garamount';
+        font-weight: 400;
+        font-size: 23px;
+        color: var(--secondary-color);
+        margin-bottom: 0;
+    }
+
+    #mig1:link { text-decoration: none; }
+
+
+    #mig1:visited { text-decoration: none; }
+
+
+    #mig1:hover { 
+    text-decoration: none;
+    color: var(--tertiary-color);
+    transition: 0.2s;
+    }
+
+    #mig1:active { 
+    text-decoration: none;
+    }
+
+    #index{
+        color: var(--dark-color);
+      }
+
+    .green{
+        position: relative;
+        width: 125%;
+        height: 500px;
+        background-color: var(--dark-color);
+        grid-column: 1/3;
+        top: 0px;
+        left: -12.5%;
+    }
+
+
+
+
+}
